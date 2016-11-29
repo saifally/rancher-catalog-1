@@ -7,24 +7,24 @@ nginx:
     ports:
         - "80:80"
 node1:
-    image: node
+    image: tomcat
     links:
-        - redis
+        - memcacached
     ports:
         - "8080"
 node2:
-    image: node
+    image: tomcat
     links:
-        - redis
+        - memcacached
     ports:
         - "8080"
 node3:
-    image: node
+    image: tomcat
     links:
-        - redis
+        - memcacached
     ports:
         - "8080"
-redis:
-    image: redis
+memcacached:
+    image: memcacached
     ports:
-        - "6379"
+        - "11211"

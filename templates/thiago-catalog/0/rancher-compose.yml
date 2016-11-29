@@ -1,7 +1,7 @@
 .catalog:
-  name: nginx and redis
+  name: nginx and memcached
   version: 0.0.1
-  description: template to deploy 3 nginx instances and redis
+  description: template to deploy 3 nginx instances and memcached
   uuid: 001
   minimum_rancher_version: # The minimum version of Rancher that supports the template
   questions: #Used to request user input for configuration options

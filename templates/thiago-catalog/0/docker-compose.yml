@@ -9,22 +9,22 @@ nginx:
 node1:
     image: tomcat
     links:
-        - memcacached
+        - memcached
     ports:
         - "8080"
 node2:
     image: tomcat
     links:
-        - memcacached
+        - memcached
     ports:
         - "8080"
 node3:
     image: tomcat
     links:
-        - memcacached
+        - memcached
     ports:
         - "8080"
-memcacached:
-    image: memcacached
+memcached:
+    image: memcached
     ports:
         - "11211"

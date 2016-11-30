@@ -13,4 +13,13 @@
       required: true
       type: "service"
 
+    - variable: "mongo_link"
+      description: |
+        stack/service link or external service link to mongo
+        cluster.
+      label: "Mongo stack/service"
+      default: "mongo/mongo-cluster"
+      required: true
+      type: "service"
+
 graylog:

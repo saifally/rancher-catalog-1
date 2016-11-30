@@ -1,4 +1,5 @@
 graylog:
+  restart: always
   image: graylog2/server
   external_links:
   - ${elasticsearch_link}:elasticsearch

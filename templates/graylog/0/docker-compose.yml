@@ -1,4 +1,5 @@
 graylog:
   image: graylog2/server
-  links:
-    - ${mongo_link}:mongo
+  external_links:
+  - ${elasticsearch_link}:elasticsearch
+  - ${mongo_link}:mongo

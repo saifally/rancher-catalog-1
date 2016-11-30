@@ -1,2 +1,4 @@
 graylog:
   image: graylog2/server
+  links:
+    - ${mongo_link}:mongo

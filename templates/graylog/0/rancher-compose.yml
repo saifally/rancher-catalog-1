@@ -1,0 +1,16 @@
+.catalog:
+  name: "Graylog"
+  version: "0.0.1-rancher1"
+  description: |
+      Graylog beta template
+  questions:
+    - variable: "elasticsearch_link"
+      description: |
+        stack/service link or external service link to elasticsearch
+        cluster.
+      label: "Elasticsearch stack/service"
+      default: "es/elasticsearch-clients"
+      required: true
+      type: "service"
+
+graylog:

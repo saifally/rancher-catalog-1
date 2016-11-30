@@ -1,0 +1,2 @@
+graylog:
+  image: graylog2/server

@@ -5,7 +5,7 @@
   uuid: 001
   minimum_rancher_version: # The minimum version of Rancher that supports the template
   questions: #Used to request user input for configuration options
-  - variable: "elasticsearch_link"
+  - variable: "logstash_link"
       description: |
         stack/service link or external service link to logstash
         cluster.

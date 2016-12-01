@@ -1,8 +1,6 @@
 nginx:
-  logging:
-    driver: gelf
-    options:
-      gelf-address: "udp://gelf:5000"
+  log_driver: "gelf"
+  log_opt: "udp://gelf:5000"
   restart: always
   image: nginx
   ports:

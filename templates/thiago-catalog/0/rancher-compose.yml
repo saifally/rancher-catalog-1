@@ -6,13 +6,11 @@
   minimum_rancher_version: # The minimum version of Rancher that supports the template
   questions: #Used to request user input for configuration options
     - variable: "logstash_link"
-        description: |
-          stack/service link or external service link to logstash
-          cluster.
-        label: "Logstash stack/service"
-        default: "logstash/logstash-collector"
-        required: true
-        type: "service"
+      description: stack/service link or external service link to logstash cluster.
+      label: "Logstash stack/service"
+      default: "logstash/logstash-collector"
+      required: true
+      type: "service"
     - variable: "public_port"
       label: "Public Port"
       description: "Unique public port for Kibana"

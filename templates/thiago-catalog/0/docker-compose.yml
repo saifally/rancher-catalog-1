@@ -4,8 +4,8 @@ nginx:
   restart: always
   image: nginx
   ports:
-  - "${public_port}:80"
+  - ${public_port}:80
   external_links:
-  - "${logstash_link}:gelf"
+  - ${logstash_link}:gelf
   labels:
     io.rancher.container.hostname_override: container_name

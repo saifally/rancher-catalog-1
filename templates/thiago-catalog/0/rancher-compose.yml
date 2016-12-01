@@ -1,7 +1,21 @@
 .catalog:
-  name: nginx and memcached
+  name: nginx
   version: 0.0.1
-  description: template to deploy 3 nginx instances and memcached
+  description: template to deploy nginx using gelf as logdriver
   uuid: 001
   minimum_rancher_version: # The minimum version of Rancher that supports the template
   questions: #Used to request user input for configuration options
+  - variable: "elasticsearch_link"
+      description: |
+        stack/service link or external service link to logstash
+        cluster.
+      label: "Logstash stack/service"
+      default: "logstash/logstash-collector"
+      required: true
+      type: "service"
+  - variable: "public_port"
+    label: "Public Port"
+    description: "Unique public port for Kibana"
+    type: "int"
+    default: 80
+    required: true

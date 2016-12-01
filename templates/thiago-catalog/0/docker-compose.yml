@@ -1,12 +1,10 @@
 nginx:
   log_driver: "gelf"
   log_opt:
-    gelf-address: "udp://gelf:5000"
+    gelf-address: "udp://35.165.62.193:56730"
   restart: always
   image: nginx
   ports:
   - "${public_port}:80"
-  external_links:
-  - ${logstash_link}:gelf
   labels:
     io.rancher.container.hostname_override: container_name
